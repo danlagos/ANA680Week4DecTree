@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wine Quality Classification:  Decision Tree</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    
+        h1 {
+            color: #4CAF50;
+        }
+    
+        h4 {
+            color: #1E90FF;
+        }
+    
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+    
+        input[type="text"] {
+            width: 200px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+    
+        input[type="submit"] {
+            width: 100px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        li {
+            list-style-type: none;
+        }
+    </style>
+  
+</head>
+<body>
+    <h1>Decision Tree Model</h1>
+    <h4>Author:  Daniel Lagos</h4>
+    <p>Decision Tree that determines wine quality on a scale of 1-10, given 4 inputs</p>
+    <p>All inputs are numbers, they can have decimal's</p>
+    <form action="{{ url_for('predict')}}" method="POST">
+        alcohol:  <input type="text" name="alcohol"></br>
+        density:  <input type="text" name="density"></br>
+	    volatile_acidity:  <input type="text" name="volatile_acidity"></br>
+	    chlorides:  <input type="text" name="chlorides"></br>
+
+        <input type=submit value=Submit>
+   </form>
+    <h2>Prediction: {{ predict }}</h2>
+    <h2>Software & Frameworks</h2>
+    <p>Python, Pandas, Numpy, Seaborn, Matplotlib, Scikit-learn</p>
+    <p>Docker for containerization</p>
+    <p>html and css for front-end</p>
+    <p>Flask for back-end</p>
+
+</body>
+</html>
