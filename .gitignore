@@ -1,3 +1,50 @@
-cicd/
+# docker
+.dockerignore
+#Heroku
+.slugignore
+# Jupyter
+.jupyter/
+jupyter_notebook_config.py
+.ipynb_checkpoints/
+# Python virtual environment
 __pycache__/
-env
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+env/
+venv/
+*.egg-info
+# MacOS specific files
+.DS_Store
+*.swp
+*.swo
+*.DS_Store
+*.AppleDouble
+*.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+# Windows specific files
+Thumbs.db
+Desktop.ini
+*.log
+*.dll
+*.exe
+*.obj
+*.pdb
+*.user
+*.aps
+*.pch
+*.sbr
+*.ncb
+*.suo
+*.tlb
+*.ilk
+*.res
+*.idb
+*.class
